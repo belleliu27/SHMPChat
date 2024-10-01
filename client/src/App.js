@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import ProductInfo from "./pages/ProductInfo";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
+import Chat from "./components/Chat"; // Import Chat component
 
 function App() {
   const { loading } = useSelector((state) => state.loaders);
@@ -50,6 +51,7 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/chat" element={<Chat />} /> {/* Add Chat route */}
         </Routes>
       </BrowserRouter>
     </div>
